@@ -30,6 +30,10 @@ Users should be able to:
 
 -   Semantic HTML5 markup
 -   SCSS custom properties
+-   CSS Animations
+-   Flexbox
+-   CSS Grid
+-   Mobile-first workflow
 
 ## Author
 

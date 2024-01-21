@@ -5,8 +5,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 body {
   background: hsl(0, 0%, 8%);
-  font-size: 16px;
-  font-family: "Figtree", sans-serif;
+  font-size: 14px;
+  font-family: "Inter";
+  color: hsl(0, 0%, 100%);
 }
 
 .panel {
@@ -15,12 +16,67 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 330px;
-  height: 500px;
+  height: 550px;
   background: hsl(0, 0%, 12%);
   border-radius: 15px;
+  box-sizing: border-box;
+  padding: 25px;
+  overflow: hidden;
+}
+.panel section,
+.panel nav {
+  position: relative;
+  width: 100%;
+}
+.panel section,
+.panel p {
+  display: flex;
+  justify-content: center;
+}
+.panel img {
+  border-radius: 50%;
+  height: 85px;
+  width: 85px;
 }
 .panel article {
   position: relative;
+}
+.panel article .name {
+  margin-top: 5px;
+  height: 50px;
+  font-size: 23px;
+  font-weight: 600;
+}
+.panel article .location {
+  color: hsl(75, 94%, 57%);
+  font-weight: 600;
+  height: 30px;
+  line-height: 10px;
+}
+.panel article .banner {
+  margin: 15px 0px 10px 0px;
+  font-weight: 0;
+  height: 50px;
+}
+.panel button {
+  width: 100%;
+  border: 0;
+  margin-top: 13px;
+  border-radius: 5px;
+  background: hsl(0, 0%, 20%);
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 38px;
+  transition: all 0.3s ease;
+}
+.panel button:hover {
+  background: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 12%);
+  cursor: pointer;
+}
+.panel .first-button {
+  margin-top: 0px;
 }
 
 .attribution {
