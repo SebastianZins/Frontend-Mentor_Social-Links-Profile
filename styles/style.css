@@ -22,46 +22,20 @@ body {
   box-sizing: border-box;
   padding: 25px;
   overflow: hidden;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 85px 40px 30px 30px 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px 0px;
+  grid-template-areas: "img" "name" "location" "banner" "button-1" "button-2" "button-3" "button-4" "button-5";
 }
-.panel section,
-.panel nav {
-  position: relative;
-  width: 100%;
-}
-.panel section,
-.panel p {
+.panel section {
   display: flex;
   justify-content: center;
-}
-.panel img {
-  border-radius: 50%;
-  height: 85px;
-  width: 85px;
-}
-.panel article {
-  position: relative;
-}
-.panel article .name {
-  margin-top: 5px;
-  height: 50px;
-  font-size: 23px;
-  font-weight: 600;
-}
-.panel article .location {
-  color: hsl(75, 94%, 57%);
-  font-weight: 600;
-  height: 30px;
-  line-height: 10px;
-}
-.panel article .banner {
-  margin: 15px 0px 10px 0px;
-  font-weight: 0;
-  height: 50px;
 }
 .panel button {
   width: 100%;
   border: 0;
-  margin-top: 13px;
   border-radius: 5px;
   background: hsl(0, 0%, 20%);
   color: white;
@@ -75,8 +49,47 @@ body {
   color: hsl(0, 0%, 12%);
   cursor: pointer;
 }
-.panel .first-button {
-  margin-top: 0px;
+.panel p {
+  margin: 0px;
+}
+.panel img {
+  border-radius: 50%;
+  height: 85px;
+  width: 85px;
+}
+.panel .image {
+  grid-area: img;
+}
+.panel .name {
+  grid-area: name;
+  font-size: 23px;
+  font-weight: 600;
+  align-items: end;
+}
+.panel .location {
+  grid-area: location;
+  color: hsl(75, 94%, 57%);
+  font-weight: 600;
+}
+.panel .banner {
+  grid-area: banner;
+  align-items: end;
+  padding-bottom: 7px;
+}
+.panel .button-1 {
+  grid-area: button-1;
+}
+.panel .button-2 {
+  grid-area: button-2;
+}
+.panel .button-3 {
+  grid-area: button-3;
+}
+.panel .button-4 {
+  grid-area: button-4;
+}
+.panel .button-5 {
+  grid-area: button-5;
 }
 
 .attribution {
